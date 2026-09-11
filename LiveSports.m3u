@@ -1,34 +1,34 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/ksk5gFzM/dazn-laliga-logo-png-seeklogo-490009.png" group-title="LIVE SPORTS",DAZN LA LIGA 1
-https://live.tv247.site/live/538/index.m3u8?v=1&e=1789238850&k=3b2b8d725fa24fb3c64333a6228bfa09
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MzgiLCJ0cyI6MTc4OTE1MzkzODc5M30
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wrzP12C0/movistar-laliga-hdr.jpg" group-title="LIVE SPORTS",M+ LA LIGA 1
-https://live.tv247.site/live/84/index.m3u8?v=1&e=1789238870&k=b4eca6e33c58031392f33fe982ca284f
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NCIsInRzIjoxNzg5MTUzOTU4MTcwfQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/rKnjKNYs/Ligade-Campeonespor-MP.jpg" group-title="LIVE SPORTS",M+ CHAMPIONS LEAGUE 1
-https://live.tv247.site/live/435/index.m3u8?v=1&e=1789238892&k=2abb4b38d78b502811ca2747ace7374d
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzUiLCJ0cyI6MTc4OTE1Mzk3ODM4OH0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png" group-title="LIVE SPORTS",M+ DEPORTES 1
-https://live.tv247.site/live/436/index.m3u8?v=1&e=1789238911&k=9baa19fcf371ce8d3733addaeb5a61ae
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzYiLCJ0cyI6MTc4OTE1NDAwMTQwNH0
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/JRN3zpCM/F4406655.jpg" group-title="LIVE SPORTS",M+ DEPORTES 2
-https://live.tv247.site/live/438/index.m3u8?v=1&e=1789238931&k=df7410f2033bd21a3bc8642dab10c668
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzgiLCJ0cyI6MTc4OTE1NDAyMzA4Nn0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/43/2/movistar-plus-2022-logo-png_seeklogo-432602.png" group-title="LIVE SPORTS",M+
-https://live.tv247.site/live/437/index.m3u8?v=1&e=1789238952&k=b241b213d7315cfc1c631fc1073474a5
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzciLCJ0cyI6MTc4OTE1NDA0ODI5OH0
 #EXTINF:-1 tvg-id="" tvg-logo="https://logowik.com/content/uploads/images/espn-deportes4468.jpg" group-title="LIVE SPORTS",ESPN DEPORTES
-https://live.tv247.site/live/375/index.m3u8?v=1&e=1789238970&k=14f7e601582aead47e77ae8044d28d78
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzUiLCJ0cyI6MTc4OTE1NDA3MDgyOH0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS",TUDN MEXICO
-https://live.tv247.site/live/935/index.m3u8?v=1&e=1789238993&k=9df42ea2dec3ed5f0e37e4f7b166a50c
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzUiLCJ0cyI6MTc4OTE1NDEwNzg0NH0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS",TUDN USA
-https://live.tv247.site/live/66/index.m3u8?v=1&e=1789239014&k=2a34faeef45fcecb7a238587d8d9496c
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NiIsInRzIjoxNzg5MTU0MTM2NjMyfQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/FL13gkG6/3840px-TNT-Sports-2023-svg.png" group-title="LIVE SPORTS",TNT SPORTS 1
-https://live.tv247.site/live/31/index.m3u8?v=1&e=1789239033&k=f113b6dd18ee111bc53cafa5e87f2546
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMSIsInRzIjoxNzg5MTU0MTU2OTgwfQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://media.info/l/o/1/1540.1690027877.png" group-title="LIVE SPORTS",TNT SPORTS 2
-https://live.tv247.site/live/32/index.m3u8?v=1&e=1789239055&k=c5fe73600339d878ec7c39a36a5161b2
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMiIsInRzIjoxNzg5MTU0MTg2OTcyfQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/Kj62z8MM/tnt-sports-3.webp" group-title="LIVE SPORTS",TNT SPORTS 3
-https://live.tv247.site/live/33/index.m3u8?v=1&e=1789239079&k=8b57a6e4d564261dc6ba86d7ff33b6ed
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMyIsInRzIjoxNzg5MTU0MjE3MDAwfQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS",SKY SPORTS PREMIER LEAGUE
-https://live.tv247.site/live/130/index.m3u8?v=1&e=1789239101&k=88407390ce66ac294c9e269fc5d81781
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzAiLCJ0cyI6MTc4OTE1NDI0NjEwMn0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS",SKY SPORTS FOOTBALL
-https://live.tv247.site/live/35/index.m3u8?v=1&e=1789239124&k=be44fe8f3f3e59a692735374a933d906
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNSIsInRzIjoxNzg5MTU0Mjc1MTQ0fQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS",SKY SPORTS PLUS
 https://live.tv247.site/live/36/index.m3u8?v=1&e=1789239147&k=f63a44689357c560b51eed6fe552a74c
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS",SKY SPORTS MAIN EVENT
-https://live.tv247.site/live/38/index.m3u8?v=1&e=1789239164&k=664126ec01bf36c1b837c93d6fe6d654
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOCIsInRzIjoxNzg5MTU0MzMxMDY0fQ
