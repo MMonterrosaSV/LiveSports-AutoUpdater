@@ -65,7 +65,6 @@ channels = {
     "SKY SPORTS FOOTBALL BACKUP": "https://huhu.to/watch?live=12588537487978d6179a2d",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
-    "SKY SPORTS MAIN EVENT BACKUP": "https://huhu.to/watch?live=1104967001797973caa80c",
 }
 
 
