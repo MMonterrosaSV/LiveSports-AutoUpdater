@@ -47,20 +47,16 @@ def extract_m3u8(url: str, headless: bool = True):
 
 
 channels = {
-    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
-    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
     "Dazn La Liga": "https://tvnow247.top/embed/dazn-laliga/",
-    "TNT SPORTS 1 UK": "https://tvnow247.top/embed/tnt-sports-1/",
-    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
+    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
+    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
     "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
-    "HBO USA": "https://tvnow247.top/embed/hbo-usa/",
     "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
-    "CUATRO": "https://tvnow247.top/embed/cuatro-spain/",
-    "TELECINCO": "https://tvnow247.top/embed/telecinco",
-    "TF1": "https://tvnow247.top/embed/tf1-france/",
+    "TNT SPORTS 1 UK": "https://tvnow247.top/embed/tnt-sports-1/",
+    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
+    "HBO USA": "https://tvnow247.top/embed/hbo-usa/",
     "HBO 2": "https://tvnow247.top/embed/hbo2-usa/",
-    "ESPN ARGENTINA": "https://pelotalibretv.uno/en-vivo/espn-1",
 }
 
 
