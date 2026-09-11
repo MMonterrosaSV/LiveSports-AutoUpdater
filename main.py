@@ -1,42 +1,6 @@
 from playwright.sync_api import sync_playwright
-import requests
-import json
 import os
-
-API_KEY = os.getenv("API_KEY")
-
-
-def update_short_link(api_key: str, link_id: str, original_url: str, title: str = None, path: str = None):
-    if not original_url:
-        print("  Skipping update (no valid m3u8 found)")
-        return None
-
-    url = f"https://api.short.io/links/{link_id}"
-
-    payload = {
-        "originalURL": original_url
-    }
-
-    if title:
-        payload["title"] = title
-    if path:
-        payload["path"] = path
-
-    headers = {
-        "Authorization": api_key,
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    }
-
-    response = requests.post(url, headers=headers, data=json.dumps(payload))
-
-    if response.status_code == 200:
-        print("  Link updated successfully")
-        return response.json()
-    else:
-        print(f"  Update failed: {response.status_code} - {response.text}")
-        return None
-
+import re
 
 def extract_m3u8(url: str, headless: bool = True):
     candidates = []
@@ -51,8 +15,6 @@ def extract_m3u8(url: str, headless: bool = True):
 
         def handle_response(response):
             response_url = response.url.lower()
-
-            # Catch both normal .m3u8 and the special playlist?token= URLs
             if (
                 ".m3u8" in response_url
                 or ("playlist" in response_url and "token=" in response_url)
@@ -71,59 +33,70 @@ def extract_m3u8(url: str, headless: bool = True):
         browser.close()
 
     if not candidates:
-        print("  No playlist URLs detected")
         return None
 
-    # Remove obvious junk
-    clean = []
-    for u in candidates:
-        u_lower = u.lower()
-        if any(bad in u_lower for bad in ["ads", "advert", "tracker", "analytics", "pixel", "banner"]):
-            continue
-        clean.append(u)
+    clean = [u for u in candidates if not any(bad in u.lower() for bad in 
+             ["ads", "advert", "tracker", "analytics", "pixel", "banner"])]
 
     if not clean:
         clean = candidates
 
-    # Prefer the ones from chunk.tvnow247.today or containing token=
     preferred = [u for u in clean if "chunk.tvnow247.today" in u or "token=" in u]
-
-    if preferred:
-        best = max(preferred, key=len)
-    else:
-        best = max(clean, key=len)
-
-    print(f"  Found → {best}")
+    best = max(preferred or clean, key=len)
     return best
 
 
-# Channels
-channelList = [
-    ["M+ CHAMPIONS LEAGUE 1", "https://tvnow247.top/embed/movistar-liga-de-campeones/", "lnk_7Q9u_Xeqfu7a54n7fCJ4CcGLTm"],
-    ["M+ LA LIGA 1", "https://tvnow247.top/embed/movistar-laliga/", "lnk_7Q9u_uJNYPSsx7Y7bSmcYIfgg5"],
-    ["Dazn La Liga", "https://tvnow247.top/embed/dazn-laliga/", "lnk_7Q9u_smbJ8VHPUsC9r1rz72R1g"],
-    ["TNT SPORTS 1 UK", "https://tvnow247.top/embed/tnt-sports-1/", "lnk_7Q9u_lTgnfvHKZ1X5Cfcavm59F"],
-    ["ESPN DEPORTES", "https://tvnow247.top/embed/espn-deportes/", "link_7Q9u_034LUN9niVnpONdrRmHJcM"],
-    ["M+ DEPORTES 1", "https://tvnow247.top/embed/movistar-deportes-4", "link_7Q9u_034LURlhtFmAFNKAYO6n0d"],
-    ["HBO USA", "https://tvnow247.top/embed/hbo-usa/","link_7Q9u_034LgYqOcjA360ayMYM8fp"],
-    ["M+ DEPORTES 2", "https://tvnow247.top/embed/movistar-deportes-2/","link_7Q9u_034LgfnaLff6J8kR7ROKMz"],
-    ["M+", "https://tvnow247.top/embed/movistar-supercopa-de-espana/","link_7Q9u_034LgnxeGnsxZqK0dhE26x"],
-    ["CUATRO", "https://tvnow247.top/embed/cuatro-spain/","link_7Q9u_034LgsDnJnWjE7N2fkyQhX"],
-    ["TELECINCO", "https://tvnow247.top/embed/telecinco","link_7Q9u_034Lgvx7xL3IKr4KzERSnz"],
-    ["TF1", "https://tvnow247.top/embed/tf1-france/","link_7Q9u_034Lh03TJLuzajpxMEQt2j"],
-    ["HBO 2", "https://tvnow247.top/embed/hbo2-usa/","link_7Q9u_034Lh5lQ2GnPzRaozCswyZ"],
-    ["ESPN ARGENTINA", "https://pelotalibretv.uno/en-vivo/espn-1","link_7Q9u_034M0mAvzdTMxtXJwKPvMR"],
-]
+channels = {
+    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
+    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
+    "Dazn La Liga": "https://tvnow247.top/embed/dazn-laliga/",
+    "TNT SPORTS 1 UK": "https://tvnow247.top/embed/tnt-sports-1/",
+    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
+    "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
+}
+
+
+def update_playlist():
+    playlist_file = "LiveSports.m3u"
+
+    # Start with the header + playlist name
+    content = "#EXTM3U\n#PLAYLIST:LIVE SPORTS\n"
+
+    # Keep existing URLs if the file already exists
+    existing_urls = {}
+    if os.path.exists(playlist_file):
+        with open(playlist_file, "r", encoding="utf-8") as f:
+            lines = f.read().splitlines()
+
+        current_name = None
+        for line in lines:
+            if line.startswith("#EXTINF:-1,"):
+                current_name = line.replace("#EXTINF:-1,", "").strip()
+            elif current_name and line.startswith("http"):
+                existing_urls[current_name] = line.strip()
+                current_name = None
+
+    for name, embed_url in channels.items():
+        print(f"\nProcessing: {name}")
+        new_url = extract_m3u8(embed_url)
+
+        if new_url:
+            print(f"  → Found: {new_url}")
+            final_url = new_url
+        else:
+            print("  → No stream found, keeping old URL")
+            final_url = existing_urls.get(name, "https://example.com")
+
+        content += f"#EXTINF:-1,{name}\n{final_url}\n"
+
+    with open(playlist_file, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("\nLiveSports.m3u has been updated")
+    return True
 
 
 if __name__ == "__main__":
-    print("Starting update job...")
-    for name, embed_url, link_id in channelList:
-        print(f"\nProcessing: {name}")
-        new_m3u8 = extract_m3u8(embed_url, headless=True)
-        if new_m3u8:
-            print(f"  Final URL → {new_m3u8}")
-            update_short_link(API_KEY, link_id, new_m3u8)
-        else:
-            print("  No valid m3u8 found")
-    print("\nJob finished.")
+    print("Starting playlist update...")
+    update_playlist()
+    print("Done.")
