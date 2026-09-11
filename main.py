@@ -67,8 +67,8 @@ channels = {
 def update_playlist():
     playlist_file = "LiveSports.m3u"
 
-    # Read existing file and extract current info
-    existing = {}  # name -> {url, tvg_id, tvg_logo, group_title}
+    # Read existing tags
+    existing = {}
 
     if os.path.exists(playlist_file):
         with open(playlist_file, "r", encoding="utf-8") as f:
@@ -77,7 +77,6 @@ def update_playlist():
         current_meta = {}
         for line in lines:
             if line.startswith("#EXTINF:"):
-                # Extract attributes and name
                 name = line.split(",")[-1].strip() if "," in line else ""
                 
                 tvg_id = re.search(r'tvg-id="([^"]*)"', line)
@@ -88,14 +87,14 @@ def update_playlist():
                     "name": name,
                     "tvg_id": tvg_id.group(1) if tvg_id else "",
                     "tvg_logo": tvg_logo.group(1) if tvg_logo else "",
-                    "group_title": group_title.group(1) if group_title else "LIVE SPORTS"
+                    "group_title": group_title.group(1) if group_title else ""
                 }
             elif line.startswith("http") and current_meta:
                 current_meta["url"] = line.strip()
                 existing[current_meta["name"]] = current_meta
                 current_meta = {}
 
-    # Build new content
+    # Build new playlist
     content = "#EXTM3U\n#PLAYLIST:LIVE SPORTS\n"
 
     for name, embed_url in channels.items():
@@ -103,11 +102,10 @@ def update_playlist():
 
         new_url = extract_m3u8(embed_url)
 
-        # Get previous values if they exist
         prev = existing.get(name, {})
         tvg_id = prev.get("tvg_id", "")
         tvg_logo = prev.get("tvg_logo", "")
-        group_title = prev.get("group_title", "LIVE SPORTS")
+        group_title = prev.get("group_title", "")          # ← default empty
         old_url = prev.get("url", "https://example.com")
 
         if new_url:
@@ -117,14 +115,13 @@ def update_playlist():
             print("  → No stream found, keeping old URL")
             final_url = old_url
 
-        # Write line preserving your manual tags
         content += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{tvg_logo}" group-title="{group_title}",{name}\n'
         content += f"{final_url}\n"
 
     with open(playlist_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("\nLiveSports.m3u has been updated (tags preserved)")
+    print("\nLiveSports.m3u has been updated (all tags preserved)")
     return True
 
 
