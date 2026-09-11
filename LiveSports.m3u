@@ -1,16 +1,16 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",Dazn La Liga 1
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/ksk5gFzM/dazn-laliga-logo-png-seeklogo-490009.png" group-title="",Dazn La Liga 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTQucGhwP2lkPTUzOCIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL2ZvdXIvc2VjdXJlLzQyYmY0NWI3YmRlYTc0N2IxMzI3MzJjYWZhNDNlZjI2LzE3ODkxNDAyMDEvcHJlbWl1bTUzOC90cmFja3MtdjFhMS9tb25vLm0zdTgiLCJ0cyI6MTc4OTEyOTQwMzA5MiwiY2hhbm5lbElkIjoiNTM4In0
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",Dazn La Liga 2 BACK UP STREAMSPORTS99
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.sincroguia.tv/storage/channels/1273-square.jpg" group-title="",Dazn La Liga 2 BACK UP STREAMSPORTS99
 https://cdnlivetv.is/secure/api/v1/6a288d2b81d8192bb76cc886/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODg2OjE3ODkxNDM4MTUzMTk6Y2RubGl2ZXR2LmlzOmM4NDI2NTNiYTQyM2ZlMWIuNjY0NWNmNDBmNzhkZDBkNmZmODQ0NGZiNGUyODBjNjMwZTJmN2MxMmE5N2U5MzYxZWFkZmYwNWM5MTM1NzE4Yg
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wrzP12C0/movistar-laliga-hdr.jpg" group-title="",M+ LA LIGA 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTIucGhwP2lkPTg0IiwibTN1OCI6Imh0dHBzOi8veGFtZWxlb24ucGhhbnRlbWxpcy50b3AvdHdvL3NlY3VyZS9lODliMGU2YWJmZmU5YzM3ZTY1OTFkMWNhNzgyNjViNy8xNzg5MTQwMjM2L3ByZW1pdW04NC90cmFja3MtdjFhMS9tb25vLm0zdTgiLCJ0cyI6MTc4OTEyOTQ0MjYwMywiY2hhbm5lbElkIjoiODQifQ
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ LA LIGA 1 BACK UP NTV
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wrzP12C0/movistar-laliga-hdr.jpg" group-title="",M+ LA LIGA 1 BACK UP NTV
 https://ds164.bluetier.top/LALIGAES/tracks-v1a1/mono.m3u8?token=TEFMSUdBRVN8bm9fY2hlY2tfaXB8MTc4OTEyOTc1OQ%3D%3D.8d84ecdc81b59aad4502c8d2ba4f565317b6c51cc2c5ff7f792850cded063559
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ CHAMPIONS LEAGUE 1
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/rKnjKNYs/Ligade-Campeonespor-MP.jpg" group-title="",M+ CHAMPIONS LEAGUE 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzNSIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS9mOWUyMzAzOTRhNjNjMWUyYmJiZWZiMzVjMWVlY2E3NC8xNzg5MTQwMjc5L3ByZW1pdW00MzUvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjk0ODMwNTAsImNoYW5uZWxJZCI6IjQzNSJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ CHAMPIONS LEAGUE 1 BACK UP NTV
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/rKnjKNYs/Ligade-Campeonespor-MP.jpg" group-title="",M+ CHAMPIONS LEAGUE 1 BACK UP NTV
 https://ds164.bluetier.top/MLIGADECAMPEONES/tracks-v1a1/mono.m3u8?token=TUxJR0FERUNBTVBFT05FU3xub19jaGVja19pcHwxNzg5MTI5Nzk3.6553591fced396b38e68902251ba6f2b31fe1343dc9699f78a2d60092cd1a8f5
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png" group-title="",M+ DEPORTES 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzNiIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS82ZTQ1OGU5MTIxMzk0YTcxYmQ1Mzc3OTg1ZGQ2OTZiMS8xNzg5MTQwMzE4L3ByZW1pdW00MzYvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjk1MTk4MTIsImNoYW5uZWxJZCI6IjQzNiJ9
