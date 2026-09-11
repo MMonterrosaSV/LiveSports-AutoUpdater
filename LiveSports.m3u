@@ -4,19 +4,19 @@
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTQucGhwP2lkPTUzOCIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL2ZvdXIvc2VjdXJlLzQ3MzFhZjBmMDMwZDBiNTViNDMxMTU3ZjZjNDU0Y2JhLzE3ODkxMzA3MDcvcHJlbWl1bTUzOC90cmFja3MtdjFhMS9tb25vLm0zdTgiLCJ0cyI6MTc4OTExOTkwOTA4MCwiY2hhbm5lbElkIjoiNTM4In0
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wrzP12C0/movistar-laliga-hdr.jpg" group-title="",M+ LA LIGA 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTIucGhwP2lkPTg0IiwibTN1OCI6Imh0dHBzOi8veGFtZWxlb24ucGhhbnRlbWxpcy50b3AvdHdvL3NlY3VyZS82ZjExMjE5ZGVhYTM3MmI0ZWZjMzNkN2Q5MTY0OGZjYi8xNzg5MTMwNzMyL3ByZW1pdW04NC90cmFja3MtdjFhMS9tb25vLm0zdTgiLCJ0cyI6MTc4OTExOTkzMzg3MCwiY2hhbm5lbElkIjoiODQifQ
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ CHAMPIONS LEAGUE 1
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ CHAMPIONS LEAGUE 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzNSIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS84ZmY5NGRhNjZiYjllZmQxMjAxMTY4ZDMwMGI3MGY4Yy8xNzg5MTMwNzUzL3ByZW1pdW00MzUvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMTk5NTQ4NDksImNoYW5uZWxJZCI6IjQzNSJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ DEPORTES 1
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ DEPORTES 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzNiIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS9hZGY3NjllMTljZDJlNDQ1Mjk2Mzk4YzRkZDU0YjU0OC8xNzg5MTMwNzczL3ByZW1pdW00MzYvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMTk5NzU3MzIsImNoYW5uZWxJZCI6IjQzNiJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ DEPORTES 2
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+ DEPORTES 2
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzOCIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS9mNThjMDU1NWFmOTMwNmNlMzkxZTBkMGQ1OGViZjE4My8xNzg5MTMwNzk2L3ByZW1pdW00MzgvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMTk5OTg1NDgsImNoYW5uZWxJZCI6IjQzOCJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",M+
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTQzNyIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS8zYmY4ZTY5ODAzZTcwYmU0NWQ2MTYzNGJkMGViY2E2ZS8xNzg5MTMwODIwL3ByZW1pdW00MzcvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjAwMjE4NzAsImNoYW5uZWxJZCI6IjQzNyJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TNT SPORTS 1 UK
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",TNT SPORTS 1 UK
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeS5waHA_aWQ9MzEiLCJtM3U4IjoiaHR0cHM6Ly94YW1lbGVvbi5waGFudGVtbGlzLnRvcC9vbmUvc2VjdXJlLzg1MmZmNDUwM2Q3OGRiYWIzZTA2MmJlMDE1OTFiNTkwLzE3ODkxMzA4NDAvcHJlbWl1bTMxL3RyYWNrcy12MWExL21vbm8ubTN1OCIsInRzIjoxNzg5MTIwMDQwOTQ0LCJjaGFubmVsSWQiOiIzMSJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",ESPN DEPORTES
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",ESPN DEPORTES
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTM3NSIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS82MjJiOGNlZmMwZmE4NDJmY2EyM2U1NTZlOTU1ODg1YS8xNzg5MTMwODU5L3ByZW1pdW0zNzUvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjAwNjExODcsImNoYW5uZWxJZCI6IjM3NSJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",HBO USA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",HBO USA
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeTMucGhwP2lkPTMyMSIsIm0zdTgiOiJodHRwczovL3hhbWVsZW9uLnBoYW50ZW1saXMudG9wL3RocmVlL3NlY3VyZS82YzUxMmI2Y2I4MmE1YWNmYTZmNTE4ZmZiNTc2NTAzMC8xNzg5MTMwODgwL3ByZW1pdW0zMjEvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjAwODE5MzMsImNoYW5uZWxJZCI6IjMyMSJ9
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",HBO 2
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="",HBO 2
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJyZWZlcmVyIjoiaHR0cHM6Ly9oYW1pcy5yb21wb25hbGlzLnN0L3ByZW1pdW10di9kYWRkeS5waHA_aWQ9Njg5IiwibTN1OCI6Imh0dHBzOi8veGFtZWxlb24ucGhhbnRlbWxpcy50b3Avb25lL3NlY3VyZS80MDI2M2NiN2NlOWQ1YzcwYThjNDFlYzJjMjRiZjhjZS8xNzg5MTMwOTAwL3ByZW1pdW02ODkvdHJhY2tzLXYxYTEvbW9uby5tM3U4IiwidHMiOjE3ODkxMjAxMDI0MzMsImNoYW5uZWxJZCI6IjY4OSJ9
