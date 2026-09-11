@@ -53,6 +53,14 @@ channels = {
     "TNT SPORTS 1 UK": "https://tvnow247.top/embed/tnt-sports-1/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
     "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
+    "HBO USA": "https://tvnow247.top/embed/hbo-usa/",
+    "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
+    "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
+    "CUATRO": "https://tvnow247.top/embed/cuatro-spain/",
+    "TELECINCO": "https://tvnow247.top/embed/telecinco",
+    "TF1": "https://tvnow247.top/embed/tf1-france/",
+    "HBO 2": "https://tvnow247.top/embed/hbo2-usa/",
+    "ESPN ARGENTINA": "https://pelotalibretv.uno/en-vivo/espn-1",
 }
 
 
