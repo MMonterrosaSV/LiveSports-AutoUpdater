@@ -49,6 +49,7 @@ def extract_m3u8(url: str, headless: bool = True):
 channels = {
     "Dazn La Liga 1": "https://tvnow247.top/embed/dazn-laliga/",
     "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
+    "M+ LA LIGA 1 BACKUP HUHU TO": "https://huhu.to/watch?live=2428779244f1f77edafe50",
     "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
     "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
     "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
