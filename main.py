@@ -1,6 +1,5 @@
 from playwright.sync_api import sync_playwright
 import os
-import re
 
 def extract_m3u8(url: str, headless: bool = True):
     candidates = []
@@ -35,6 +34,83 @@ def extract_m3u8(url: str, headless: bool = True):
     if not candidates:
         return None
 
+    clean = [u for u in candidates if not any(bad in u.lower() for bad in 
+             ["ads", "advert", "tracker", "analytics", "pixel", "banner"])]
+
+    if not clean:
+        clean = candidates
+
+    preferred = [u for u in clean if "chunk.tvnow247.today" in u or "token=" in u]
+    best = max(preferred or clean, key=len)
+    return best
+
+
+channels = {
+    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
+    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
+    "Dazn La Liga": "https://tvnow247.top/embed/dazn-laliga/",
+    "TNT SPORTS 1 UK": "https://tvnow247.top/embed/tnt-sports-1/",
+    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
+    "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
+    "HBO USA": "https://tvnow247.top/embed/hbo-usa/",
+    "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
+    "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
+    "CUATRO": "https://tvnow247.top/embed/cuatro-spain/",
+    "TELECINCO": "https://tvnow247.top/embed/telecinco",
+    "TF1": "https://tvnow247.top/embed/tf1-france/",
+    "HBO 2": "https://tvnow247.top/embed/hbo2-usa/",
+    "ESPN ARGENTINA": "https://pelotalibretv.uno/en-vivo/espn-1",
+}
+
+
+def update_playlist():
+    playlist_file = "LiveSports.m3u"
+
+    # Header
+    content = "#EXTM3U\n#PLAYLIST:LIVE SPORTS\n"
+
+    # Keep old URLs if they exist
+    existing_urls = {}
+    if os.path.exists(playlist_file):
+        with open(playlist_file, "r", encoding="utf-8") as f:
+            lines = f.read().splitlines()
+
+        current_name = None
+        for line in lines:
+            if line.startswith("#EXTINF:"):
+                # Extract the channel name (after the last comma)
+                if "," in line:
+                    current_name = line.split(",")[-1].strip()
+            elif current_name and line.startswith("http"):
+                existing_urls[current_name] = line.strip()
+                current_name = None
+
+    for name, embed_url in channels.items():
+        print(f"\nProcessing: {name}")
+        new_url = extract_m3u8(embed_url)
+
+        if new_url:
+            print(f"  → Found: {new_url}")
+            final_url = new_url
+        else:
+            print("  → No stream found, keeping old URL")
+            final_url = existing_urls.get(name, "https://example.com")
+
+        # Line with the requested tags
+        content += f'#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",{name}\n'
+        content += f"{final_url}\n"
+
+    with open(playlist_file, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("\nLiveSports.m3u has been updated")
+    return True
+
+
+if __name__ == "__main__":
+    print("Starting playlist update...")
+    update_playlist()
+    print("Done.")
     clean = [u for u in candidates if not any(bad in u.lower() for bad in 
              ["ads", "advert", "tracker", "analytics", "pixel", "banner"])]
 
