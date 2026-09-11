@@ -48,7 +48,7 @@ def extract_m3u8(url: str, headless: bool = True):
 
 channels = {
     "Dazn La Liga 1": "https://tvnow247.top/embed/dazn-laliga/",
-    "Dazn La Liga 2 BACK UP STREAMSPORTS99": "https://cdnlivetv.is/api/v1/channels/player/?name=DAZN%20LaLiga%202&code=es&user=cdnlivetv&plan=free",
+    "Dazn La Liga 2 STREAMSPORTS99": "https://cdnlivetv.is/api/v1/channels/player/?name=DAZN%20LaLiga%202&code=es&user=cdnlivetv&plan=free",
     "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
     "M+ LA LIGA 1 BACK UP NTV": "https://ntv.cx/channel/falcon/LALIGA-ES",
     "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
