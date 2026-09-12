@@ -85,6 +85,7 @@ channels = {
     "Dsports": "https://wsdeportes.net/?v=dsports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
     "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
+    "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
     "TNT SPORTS 1": "https://tvnow247.top/embed/tnt-sports-1/",
     "TNT SPORTS 2": "https://tvnow247.top/watch/tnt-sports-2/",
     "TNT SPORTS 3": "https://tvnow247.top/watch/tnt-sports-3/",
