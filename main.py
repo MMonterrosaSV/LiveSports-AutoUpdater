@@ -46,32 +46,26 @@ def extract_m3u8(url: str, headless: bool = True):
     return best
 
 
+# Name → (embed_url, group_title)
 channels = {
-    "DAZN LA LIGA 1": "https://tvnow247.top/embed/dazn-laliga/",
-    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
-    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
-    "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
-    "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
-    "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
-    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
-    "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
-    "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
-    "TNT SPORTS 1": "https://tvnow247.top/embed/tnt-sports-1/",
-    "TNT SPORTS 2": "https://tvnow247.top/watch/tnt-sports-2/",
-    "TNT SPORTS 3": "https://tvnow247.top/watch/tnt-sports-3/",
-    "SKY SPORTS PREMIER LEAGUE": "https://tvnow247.top/watch/sky-sports-premier-league/",
-    "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
-    "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
-    "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
+    "Dazn La Liga": ("https://tvnow247.top/embed/dazn-laliga/", "Live Sports"),
+    "M+ LA LIGA 1": ("https://tvnow247.top/embed/movistar-laliga/", "Live Sports"),
+    "M+ CHAMPIONS LEAGUE 1": ("https://tvnow247.top/embed/movistar-liga-de-campeones/", "Live Sports"),
+    "M+ DEPORTES 1": ("https://tvnow247.top/embed/movistar-deportes-4", "Live Sports"),
+    "M+ DEPORTES 2": ("https://tvnow247.top/embed/movistar-deportes-2/", "Live Sports"),
+    "M+": ("https://tvnow247.top/embed/movistar-supercopa-de-espana/", "Live Sports"),
+    "TNT SPORTS 1 UK": ("https://tvnow247.top/embed/tnt-sports-1/", "Live Sports"),
+    "ESPN DEPORTES": ("https://tvnow247.top/embed/espn-deportes/", "Live Sports"),
+    "HBO USA": ("https://tvnow247.top/embed/hbo-usa/", "Live Sports"),
+    "HBO 2": ("https://tvnow247.top/embed/hbo2-usa/", "Live Sports"),
 }
 
 
 def update_playlist():
     playlist_file = "LiveSports.m3u"
 
-    # Read existing tags
+    # Only preserve tvg-id and tvg-logo
     existing = {}
-
     if os.path.exists(playlist_file):
         with open(playlist_file, "r", encoding="utf-8") as f:
             lines = f.read().splitlines()
@@ -80,26 +74,22 @@ def update_playlist():
         for line in lines:
             if line.startswith("#EXTINF:"):
                 name = line.split(",")[-1].strip() if "," in line else ""
-                
                 tvg_id = re.search(r'tvg-id="([^"]*)"', line)
                 tvg_logo = re.search(r'tvg-logo="([^"]*)"', line)
-                group_title = re.search(r'group-title="([^"]*)"', line)
 
                 current_meta = {
                     "name": name,
                     "tvg_id": tvg_id.group(1) if tvg_id else "",
                     "tvg_logo": tvg_logo.group(1) if tvg_logo else "",
-                    "group_title": group_title.group(1) if group_title else ""
                 }
             elif line.startswith("http") and current_meta:
                 current_meta["url"] = line.strip()
                 existing[current_meta["name"]] = current_meta
                 current_meta = {}
 
-    # Build new playlist
     content = "#EXTM3U\n#PLAYLIST:LIVE SPORTS\n"
 
-    for name, embed_url in channels.items():
+    for name, (embed_url, group_title) in channels.items():
         print(f"\nProcessing: {name}")
 
         new_url = extract_m3u8(embed_url)
@@ -107,23 +97,23 @@ def update_playlist():
         prev = existing.get(name, {})
         tvg_id = prev.get("tvg_id", "")
         tvg_logo = prev.get("tvg_logo", "")
-        group_title = prev.get("group_title", "")          # ← default empty
         old_url = prev.get("url", "https://example.com")
+
+        final_url = new_url if new_url else old_url
 
         if new_url:
             print(f"  → Found: {new_url}")
-            final_url = new_url
         else:
             print("  → No stream found, keeping old URL")
-            final_url = old_url
 
+        # group_title always comes from the channels list
         content += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{tvg_logo}" group-title="{group_title}",{name}\n'
         content += f"{final_url}\n"
 
     with open(playlist_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("\nLiveSports.m3u has been updated (all tags preserved)")
+    print("\nLiveSports.m3u has been updated")
     return True
 
 
