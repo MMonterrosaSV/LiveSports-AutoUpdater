@@ -4,13 +4,30 @@ import re
 from urllib.parse import urljoin, urlparse, parse_qs
 
 
-def get_expiry(url: str) -> int:
-    """Extract the e= parameter (expiry timestamp) from the URL"""
+def score_url(url: str) -> int:
+    """
+    Higher score = newer / better signed URL.
+    Works for live.tv247.site (e= parameter) and ftlly.com tokens.
+    """
+    score = 0
+
+    # 1. live.tv247.site → use e= parameter
     try:
         qs = parse_qs(urlparse(url).query)
-        return int(qs.get("e", [0])[0])
+        if "e" in qs:
+            score = max(score, int(qs["e"][0]))
     except:
-        return 0
+        pass
+
+    # 2. ftlly.com (and similar) → extract large timestamp numbers from the token
+    numbers = re.findall(r"(\d{10,})", url)
+    if numbers:
+        score = max(score, max(int(n) for n in numbers))
+
+    # 3. slight preference for longer URLs
+    score = score * 10 + len(url)
+
+    return score
 
 
 def extract_m3u8_from_page(page, url: str):
@@ -19,7 +36,7 @@ def extract_m3u8_from_page(page, url: str):
 
     def handle_response(response):
         u = response.url
-        if "live.tv247.site" in u and ".m3u8" in u:
+        if any(x in u for x in ["live.tv247.site", "ftlly.com"]) and ".m3u8" in u:
             candidates.append(u)
         elif ".m3u8" in u.lower() or ("playlist" in u.lower() and "token=" in u.lower()):
             candidates.append(u)
@@ -40,11 +57,12 @@ def extract_m3u8_from_page(page, url: str):
     if not candidates:
         return None
 
-    # Prefer live.tv247.site and pick the one with the highest expiry
-    tv247 = [u for u in candidates if "live.tv247.site" in u]
-    pool = tv247 if tv247 else candidates
+    # Prefer known good domains first
+    preferred = [u for u in candidates if "live.tv247.site" in u or "ftlly.com" in u]
+    pool = preferred if preferred else candidates
 
-    best = max(pool, key=lambda u: (get_expiry(u), len(u)))
+    # Pick the newest signed URL
+    best = max(pool, key=score_url)
     return best
 
 
@@ -200,6 +218,10 @@ if __name__ == "__main__":
     print("Starting playlist update...")
     update_playlist()
     print("Done.")
-    
+
+
+
+
+
 
 
