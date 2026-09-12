@@ -1,6 +1,29 @@
 from playwright.sync_api import sync_playwright
 import os
 import re
+from urllib.parse import urlparse, parse_qs
+
+
+def score_url(url: str) -> int:
+    """Higher score = newer signed URL"""
+    score = 0
+
+    # live.tv247.site → e= parameter
+    try:
+        qs = parse_qs(urlparse(url).query)
+        if "e" in qs:
+            score = max(score, int(qs["e"][0]))
+    except:
+        pass
+
+    # ftlly.com and similar → timestamps inside the token
+    numbers = re.findall(r"(\d{10,})", url)
+    if numbers:
+        score = max(score, max(int(n) for n in numbers))
+
+    score = score * 10 + len(url)
+    return score
+
 
 def extract_m3u8(url: str, headless: bool = True):
     candidates = []
@@ -14,13 +37,15 @@ def extract_m3u8(url: str, headless: bool = True):
         page = context.new_page()
 
         def handle_response(response):
-            response_url = response.url.lower()
+            u = response.url
             if (
-                ".m3u8" in response_url
-                or ("playlist" in response_url and "token=" in response_url)
-                or "chunk.tvnow247.today" in response_url
+                ".m3u8" in u.lower()
+                or ("playlist" in u.lower() and "token=" in u.lower())
+                or "chunk.tvnow247.today" in u.lower()
+                or "live.tv247.site" in u.lower()
+                or "ftlly.com" in u.lower()
             ):
-                candidates.append(response.url)
+                candidates.append(u)
 
         page.on("response", handle_response)
 
@@ -29,20 +54,23 @@ def extract_m3u8(url: str, headless: bool = True):
         except Exception as e:
             print(f"  Warning: {e}")
 
-        page.wait_for_timeout(7000)
+        page.wait_for_timeout(10000)  # extra time for the newest token
         browser.close()
 
     if not candidates:
         return None
 
-    clean = [u for u in candidates if not any(bad in u.lower() for bad in 
+    clean = [u for u in candidates if not any(bad in u.lower() for bad in
              ["ads", "advert", "tracker", "analytics", "pixel", "banner"])]
 
     if not clean:
         clean = candidates
 
-    preferred = [u for u in clean if "chunk.tvnow247.today" in u or "token=" in u]
-    best = max(preferred or clean, key=len)
+    # Prefer known good domains, then newest signature
+    preferred = [u for u in clean if any(x in u for x in ["live.tv247.site", "ftlly.com", "chunk.tvnow247.today", "token="])]
+    pool = preferred if preferred else clean
+
+    best = max(pool, key=score_url)
     return best
 
 
@@ -72,7 +100,6 @@ def update_playlist():
 
     # Read existing tags
     existing = {}
-
     if os.path.exists(playlist_file):
         with open(playlist_file, "r", encoding="utf-8") as f:
             lines = f.read().splitlines()
@@ -81,7 +108,6 @@ def update_playlist():
         for line in lines:
             if line.startswith("#EXTINF:"):
                 name = line.split(",")[-1].strip() if "," in line else ""
-                
                 tvg_id = re.search(r'tvg-id="([^"]*)"', line)
                 tvg_logo = re.search(r'tvg-logo="([^"]*)"', line)
                 group_title = re.search(r'group-title="([^"]*)"', line)
@@ -97,18 +123,16 @@ def update_playlist():
                 existing[current_meta["name"]] = current_meta
                 current_meta = {}
 
-    # Build new playlist
     content = "#EXTM3U\n#PLAYLIST:LIVE SPORTS\n"
 
     for name, embed_url in channels.items():
         print(f"\nProcessing: {name}")
-
         new_url = extract_m3u8(embed_url)
 
         prev = existing.get(name, {})
         tvg_id = prev.get("tvg_id", "")
         tvg_logo = prev.get("tvg_logo", "")
-        group_title = prev.get("group_title", "")          # ← default empty
+        group_title = prev.get("group_title", "Live Sports")  # default group
         old_url = prev.get("url", "https://example.com")
 
         if new_url:
@@ -124,7 +148,7 @@ def update_playlist():
     with open(playlist_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("\nLiveSports.m3u has been updated (all tags preserved)")
+    print("\nLiveSports.m3u has been updated")
     return True
 
 
