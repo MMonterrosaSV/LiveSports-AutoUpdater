@@ -54,7 +54,7 @@ channels = {
     "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
-    "Dsports": "https://pelotalibretv.uno/en-vivo/directv-sports",
+    "Dsports": "https://futbollibretv.net.pe/en-vivo/directv-sports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
     "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
     "TNT SPORTS 1": "https://tvnow247.top/embed/tnt-sports-1/",
