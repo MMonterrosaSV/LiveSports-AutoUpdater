@@ -93,6 +93,7 @@ channels = {
     "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
+    "ESPN DEPORTES NEW": "https://w6.sportsonliine.click/channels/hd/hd6.php",
 }
 
 
