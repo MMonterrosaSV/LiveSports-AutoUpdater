@@ -15,13 +15,13 @@ https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzciLC
 #EXTINF:-1 tvg-id="" tvg-logo="https://logowik.com/content/uploads/images/espn-deportes4468.jpg" group-title="LIVE SPORTS TVNOW247",ESPN DEPORTES
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzUiLCJ0cyI6MTc4OTQwOTk5NTk1M30
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/dsports-logo-png_seeklogo-626310.png" group-title="LIVE SPORTS TVNOW247",Dsports
-https://cdn.freetv2026.lat/hls/dsports/index.m3u8?token=smc0_rCb1v6pxE4oJQYUUw&expires=1789473989
+https://cdn.freetv2026.lat/hls/dsports/index.m3u8?token=Sn8P9jliQVkIR6OMzRMHgQ&expires=1789481192
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS TVNOW247",TUDN MEXICO
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzUiLCJ0cyI6MTc4OTQxMDA0MTYzMX0
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS TVNOW247",TUDN USA
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NiIsInRzIjoxNzg5NDEwMDc0MDU0fQ
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS TVNOW247",TUDN USA BACKUP
-https://cdn.freetv2026.lat/hls/tudnus/index.m3u8?token=dEhY89asFvEQoiNlcf0SFA&expires=1789474147
+https://cdn.freetv2026.lat/hls/tudnus/index.m3u8?token=_iqMuqwecpFJ5LI42IIiYw&expires=1789481351
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/48/1/tnt-sports-logo-png_seeklogo-486966.png" group-title="LIVE SPORTS TVNOW247",TNT SPORTS 1
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMSIsInRzIjoxNzg5NDEwMTE1ODg3fQ
 #EXTINF:-1 tvg-id="" tvg-logo="https://media.info/l/o/1/1540.1690027877.png" group-title="LIVE SPORTS TVNOW247",TNT SPORTS 2
@@ -37,4 +37,4 @@ https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNiIsIn
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS TVNOW247",SKY SPORTS MAIN EVENT
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOCIsInRzIjoxNzg5NDEwMzA2MjkwfQ
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS TVNOW247",ESPN DEPORTES NEW
-https://8375pd.awqb0f40a9yo.net:8443/hls/nessgjp115wr8.m3u8?s=8wwvoME8qwvDCf_80MPj1A&e=1789481816
+https://80ejg1.5gkygx509kqv.net:8443/hls/nessgjp115wr8.m3u8?s=xLmWHv-pInJOl5BGVBcNtw&e=1789489019
