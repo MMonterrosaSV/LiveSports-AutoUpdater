@@ -82,7 +82,9 @@ channels = {
     "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
-    "Dsports": "https://wsdeportes.net/?v=dsports",
+    "ESPN DEPORTES BACKUP 1": "https://w6.sportsonliine.click/channels/hd/hd6.php",
+    "DSPORTS": "https://wsdeportes.net/?v=dsports",
+    "DSPORTS BACKUP 1": "https://tvf90.com/online.php?stream=dsports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
     "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
     "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
@@ -93,7 +95,8 @@ channels = {
     "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
-    "ESPN DEPORTES NEW": "https://w6.sportsonliine.click/channels/hd/hd6.php",
+    "FOX SPORTS 1": "https://tvf90.com/online.php?stream=foxsports1_usa",
+    "FOX SPORTS 2": "https://tvf90.com/online.php?stream=foxsports2_usa",
 }
 
 
