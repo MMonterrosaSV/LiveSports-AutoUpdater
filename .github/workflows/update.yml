@@ -2,7 +2,7 @@ name: Update LiveSports playlist
 
 on:
   schedule:
-    - cron: '0 * * * *'   # every 1 hour
+    - cron: '0 */3 * * *'   # every 3 hours
   workflow_dispatch:        # allows manual run
 
 permissions:
