@@ -5,7 +5,7 @@ from urllib.parse import urlparse, parse_qs
 
 
 def score_url(url: str) -> int:
-    """Higher score = newer signed URL"""
+    """Higher score = newer signed URL / more preferred URL"""
     score = 0
 
     # live.tv247.site → e= parameter
@@ -22,6 +22,16 @@ def score_url(url: str) -> int:
         score = max(score, max(int(n) for n in numbers))
 
     score = score * 10 + len(url)
+
+    # Strongly prefer actual .m3u8 playlists over individual .ts segment
+    # files. Without this, a long .ts segment URL can outscore a shorter
+    # .m3u8 URL purely on length/token digits, which is never what you want.
+    path = urlparse(url).path.lower()
+    if path.endswith(".m3u8"):
+        score += 10**9
+    elif path.endswith(".ts"):
+        score -= 10**9
+
     return score
 
 
