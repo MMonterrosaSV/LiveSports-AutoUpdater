@@ -1,4 +1,3 @@
-```python
 from playwright.sync_api import sync_playwright
 import os
 import re
@@ -88,7 +87,7 @@ def extract_m3u8(url: str, headless: bool = True):
             "ftlly.com",
             "chunk.tvnow247.today",
             "token=",
-            ".m3u8"
+            "m3u8"
         ])
     ]
     pool = preferred if preferred else clean
@@ -188,4 +187,3 @@ if __name__ == "__main__":
     print("Starting playlist update...")
     update_playlist()
     print("Done.")
-```
