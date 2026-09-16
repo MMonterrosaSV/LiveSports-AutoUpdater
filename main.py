@@ -1,3 +1,4 @@
+```python
 from playwright.sync_api import sync_playwright
 import os
 import re
@@ -5,33 +6,31 @@ from urllib.parse import urlparse, parse_qs
 
 
 def score_url(url: str) -> int:
-    """Higher score = newer signed URL / more preferred URL"""
+    """Higher score = newer / more preferred signed URL"""
     score = 0
 
-    # live.tv247.site → e= parameter
+    # live.tv247.site style → e= parameter
     try:
         qs = parse_qs(urlparse(url).query)
         if "e" in qs:
             score = max(score, int(qs["e"][0]))
-    except:
+    except Exception:
         pass
 
-    # ftlly.com and similar → timestamps inside the token
+    # ftlly.com and similar → take the highest timestamp inside the token
     numbers = re.findall(r"(\d{10,})", url)
     if numbers:
         score = max(score, max(int(n) for n in numbers))
 
-    score = score * 10 + len(url)
-
-    # Strongly prefer actual .m3u8 playlists over individual .ts segment
-    # files. Without this, a long .ts segment URL can outscore a shorter
-    # .m3u8 URL purely on length/token digits, which is never what you want.
+    # Strongly prefer real .m3u8 playlists over individual .ts segments
     path = urlparse(url).path.lower()
     if path.endswith(".m3u8"):
         score += 10**9
     elif path.endswith(".ts"):
         score -= 10**9
 
+    # Tiny tie-breaker (prefer longer URLs only when everything else is equal)
+    score = score * 10 + len(url)
     return score
 
 
@@ -64,21 +63,40 @@ def extract_m3u8(url: str, headless: bool = True):
         except Exception as e:
             print(f"  Warning: {e}")
 
-        page.wait_for_timeout(10000)  # extra time for the newest token
+        # Give the player a bit more time to request the newest token
+        page.wait_for_timeout(15000)
         browser.close()
 
     if not candidates:
         return None
 
-    clean = [u for u in candidates if not any(bad in u.lower() for bad in
-             ["ads", "advert", "tracker", "analytics", "pixel", "banner"])]
+    # Remove obvious junk
+    clean = [
+        u for u in candidates
+        if not any(bad in u.lower() for bad in
+                   ["ads", "advert", "tracker", "analytics", "pixel", "banner"])
+    ]
 
     if not clean:
         clean = candidates
 
-    # Prefer known good domains, then newest signature
-    preferred = [u for u in clean if any(x in u for x in ["live.tv247.site", "ftlly.com", "chunk.tvnow247.today", "token=", "m3u8"])]
+    # Prefer known good domains / real playlists
+    preferred = [
+        u for u in clean
+        if any(x in u for x in [
+            "live.tv247.site",
+            "ftlly.com",
+            "chunk.tvnow247.today",
+            "token=",
+            ".m3u8"
+        ])
+    ]
     pool = preferred if preferred else clean
+
+    # Debug: show what was found (sorted by score)
+    print("  Candidates (highest score first):")
+    for c in sorted(pool, key=score_url, reverse=True):
+        print(f"    {score_url(c):>15}  {c}")
 
     best = max(pool, key=score_url)
     return best
@@ -112,7 +130,7 @@ channels = {
 def update_playlist():
     playlist_file = "LiveSports.m3u"
 
-    # Read existing tags
+    # Read existing tags so we keep logos / groups
     existing = {}
     if os.path.exists(playlist_file):
         with open(playlist_file, "r", encoding="utf-8") as f:
@@ -146,11 +164,11 @@ def update_playlist():
         prev = existing.get(name, {})
         tvg_id = prev.get("tvg_id", "")
         tvg_logo = prev.get("tvg_logo", "")
-        group_title = prev.get("group_title", "Live Sports")  # default group
+        group_title = prev.get("group_title", "Live Sports")
         old_url = prev.get("url", "https://example.com")
 
         if new_url:
-            print(f"  → Found: {new_url}")
+            print(f"  → Selected: {new_url}")
             final_url = new_url
         else:
             print("  → No stream found, keeping old URL")
@@ -170,3 +188,4 @@ if __name__ == "__main__":
     print("Starting playlist update...")
     update_playlist()
     print("Done.")
+```
