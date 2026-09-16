@@ -92,7 +92,6 @@ channels = {
     "M+ DEPORTES 2": "https://tvnow247.top/embed/movistar-deportes-2/",
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
-    "ESPN DEPORTES BACKUP 1": "https://w6.sportsonliine.click/channels/hd/hd6.php",
     "DSPORTS": "https://wsdeportes.net/?v=dsports",
     "DSPORTS BACKUP 1": "https://tvf90.com/online.php?stream=dsports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
