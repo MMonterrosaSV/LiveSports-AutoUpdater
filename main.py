@@ -5,7 +5,7 @@ from urllib.parse import urlparse, parse_qs
 
 
 def score_url(url: str) -> int:
-    """Higher score = newer / more preferred signed URL"""
+    """Higher score = newer signed URL / more preferred URL"""
     score = 0
 
     # live.tv247.site style → e= parameter
@@ -21,19 +21,12 @@ def score_url(url: str) -> int:
     if numbers:
         score = max(score, max(int(n) for n in numbers))
 
+    # Strongly prefer real .m3u8 playlists over individual .ts segments
     path = urlparse(url).path.lower()
-
-    # Strongly prefer real master playlists over individual .ts segments
-    if path.endswith(".m3u8") or "mono.m3u8" in path:
+    if path.endswith(".m3u8"):
         score += 10**9
     elif path.endswith(".ts"):
         score -= 10**9
-
-    # Extra boost for known good domains
-    if "ftlly.com" in url.lower():
-        score += 10**8
-    elif "live.tv247.site" in url.lower() or "chunk.tvnow247.today" in url.lower():
-        score += 5 * 10**7
 
     # Tiny tie-breaker (prefer longer URLs only when everything else is equal)
     score = score * 10 + len(url)
@@ -55,29 +48,29 @@ def extract_m3u8(url: str, headless: bool = True):
             u = response.url
             if (
                 ".m3u8" in u.lower()
-                or "ftlly.com" in u.lower()
                 or ("playlist" in u.lower() and "token=" in u.lower())
                 or "chunk.tvnow247.today" in u.lower()
                 or "live.tv247.site" in u.lower()
+                or "ftlly.com" in u.lower()
             ):
                 candidates.append(u)
 
         page.on("response", handle_response)
 
         try:
-            # Use domcontentloaded so we don't get stuck on continuous network activity
+            # domcontentloaded is more reliable than networkidle on ad-heavy pages
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
         except Exception as e:
             print(f"  Warning: {e}")
 
-        # Try to dismiss first-click ad / play overlay (helps tvf90 and similar players)
+        # Try to dismiss the first-click ad / play overlay used by tvf90
         try:
             page.click("body", timeout=3000)
             page.wait_for_timeout(1500)
         except Exception:
             pass
 
-        # Give the player enough time to request the newest token
+        # Give the player time to request a fresh token
         page.wait_for_timeout(12000)
         browser.close()
 
@@ -97,12 +90,12 @@ def extract_m3u8(url: str, headless: bool = True):
     # Prefer known good domains / real playlists
     preferred = [
         u for u in clean
-        if any(x in u.lower() for x in [
-            "ftlly.com",
+        if any(x in u for x in [
             "live.tv247.site",
+            "ftlly.com",
             "chunk.tvnow247.today",
             "token=",
-            ".m3u8"
+            "m3u8"
         ])
     ]
     pool = preferred if preferred else clean
@@ -125,6 +118,8 @@ channels = {
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
     "DSPORTS": "https://wsdeportes.net/?v=dsports",
+    # Use the direct player page (5.php) – much more reliable than online.php
+    "DSPORTS BACKUP 1 TVF90": "https://tvf90.com/5.php?stream=dsports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
     "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
     "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
