@@ -125,8 +125,6 @@ channels = {
     "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
     "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
     "DSPORTS": "https://wsdeportes.net/?v=dsports",
-    # Use the direct player page (5.php) – much more reliable than online.php
-    "DSPORTS BACKUP 1": "https://tvf90.com/5.php?stream=dsports",
     "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
     "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
     "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
@@ -137,9 +135,6 @@ channels = {
     "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
-    # Use the direct player page (5.php)
-    "FOX SPORTS 1": "https://tvf90.com/5.php?stream=foxsports1_usa",
-    "FOX SPORTS 2": "https://tvf90.com/5.php?stream=foxsports2_usa",
 }
 
 
