@@ -67,7 +67,7 @@ def extract_m3u8(url: str, headless: bool = True):
         clean = candidates
 
     # Prefer known good domains, then newest signature
-    preferred = [u for u in clean if any(x in u for x in ["live.tv247.site", "ftlly.com", "chunk.tvnow247.today", "token="])]
+    preferred = [u for u in clean if any(x in u for x in ["live.tv247.site", "ftlly.com", "chunk.tvnow247.today", "token=", "m3u8"])]
     pool = preferred if preferred else clean
 
     best = max(pool, key=score_url)
