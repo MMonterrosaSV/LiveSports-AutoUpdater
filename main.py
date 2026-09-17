@@ -116,6 +116,11 @@ def extract_m3u8(url: str, headless: bool = True):
 channels = {
     "DAZN LA LIGA 1": "https://cdnlivetv.tv/api/v1/channels/player/?name=DAZN%20LaLiga&code=es&user=cdnlivetv&plan=free",
     "beIN SPORTS N": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20SPORTS%20N&code=es&user=cdnlivetv&plan=free",
+    "ESPN Deportes": "https://cdnlivetv.tv/api/v1/channels/player/?name=ESPN%20Deportes&code=us&user=cdnlivetv&plan=free",
+    "CBS Sports Golazo": "https://cdnlivetv.tv/api/v1/channels/player/?name=CBS%20Sports%20Golazo&code=us&user=cdnlivetv&plan=free",
+    "Sky Sports Premier League": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Premier%20League&code=gb&user=cdnlivetv&plan=free",
+    "Sky Sports Football": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Football&code=gb&user=cdnlivetv&plan=free",
+
 }
 
 
