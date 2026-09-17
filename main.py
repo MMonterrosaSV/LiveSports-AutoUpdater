@@ -52,6 +52,7 @@ def extract_m3u8(url: str, headless: bool = True):
                 or "chunk.tvnow247.today" in u.lower()
                 or "live.tv247.site" in u.lower()
                 or "ftlly.com" in u.lower()
+                or "cdnlivetv.tv" in u.lower()
             ):
                 candidates.append(u)
 
@@ -94,8 +95,9 @@ def extract_m3u8(url: str, headless: bool = True):
             "live.tv247.site",
             "ftlly.com",
             "chunk.tvnow247.today",
+            "cdnlivetv.tv"
             "token=",
-            "m3u8"
+            ".m3u8"
         ])
     ]
     pool = preferred if preferred else clean
@@ -110,6 +112,7 @@ def extract_m3u8(url: str, headless: bool = True):
 
 
 channels = {
+    """
     "DAZN LA LIGA 1": "https://tvnow247.top/embed/dazn-laliga/",
     "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
     "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
@@ -126,6 +129,8 @@ channels = {
     "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
+    """
+    "DAZN LA LIGA 1": "https://cdnlivetv.tv/api/v1/channels/player/?name=DAZN%20LaLiga&code=es&user=cdnlivetv&plan=free",
 }
 
 
