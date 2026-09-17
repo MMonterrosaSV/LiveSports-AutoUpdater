@@ -111,8 +111,8 @@ def extract_m3u8(url: str, headless: bool = True):
     return best
 
 
-channels = {
-    """
+
+ """
     "DAZN LA LIGA 1": "https://tvnow247.top/embed/dazn-laliga/",
     "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
     "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
@@ -129,9 +129,13 @@ channels = {
     "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
     "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
     "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
-    """
+"""
+channels = {
     "DAZN LA LIGA 1": "https://cdnlivetv.tv/api/v1/channels/player/?name=DAZN%20LaLiga&code=es&user=cdnlivetv&plan=free",
+    "beIN SPORTS N": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20SPORTS%20N&code=es&user=cdnlivetv&plan=free",
 }
+
+
 
 
 def update_playlist():
