@@ -1,14 +1,14 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",DAZN LA LIGA 1 VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2ODcyMDk3MzU6Y2RubGl2ZXR2LnR2OmIzNmIxZWI0MTdkMmZiMDkuYmEwOTFjMzgyMWE0OTA4ZGYxNzU1YzViYWRkZTgwYWUyY2UxNDQyZjQ0YjcwMWM5MzkxYjkzNmM3ODI1OTMyOA
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",beIN SPORTS N VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2ODcyMjQyODk6Y2RubGl2ZXR2LnR2OmMxZmRjMzIxNTllNzE3NjEuZWU4ZTJmMWM4NDUwMTZkYjk1YWJjYjJhYmZjOTgzNTE5YTEyZDYyMWJmZjNiOTg1YTg2NjJlZDBiZjZmMjk5ZQ
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",ESPN Deportes VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODk2ODcyMzg4NDQ6Y2RubGl2ZXR2LnR2OjM1MTVjZjcxMzZhNWVlNzUuMmVlOGIyNGUzZDQ0NGY3NjRkZGYxZGQwM2Y5YjE1N2UyNDU4OGUxYjZjZWFjZGI0OTViZmVlOTY4MjkwODBkMg
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",CBS Sports Golazo VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb598/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTk4OjE3ODk2ODcyNTMzOTg6Y2RubGl2ZXR2LnR2OjNiMzJjZWNhMTVkMzhmZjQuN2YwYzkwNGZkMjA1MDg1NjYwODU3MjljNjZmYTNiZDQ5N2I0MDliMTYwNjc1ZmM0ZWI3OGNkNDE0NWFlYTIxZg
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",Sky Sports Premier League VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc33d/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzNkOjE3ODk2ODcyNjc5NjA6Y2RubGl2ZXR2LnR2OjNjODExY2Y3OWQ3MGI5NjUuYWEzODIxY2I0ZDAzZmFmNDc1NDE5YjJjZWQ3YTExYmY4OTEwOTA2NWVmOWY2ZDFmNjIzOGU3YzhjZjM1NzRjZg
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS CDNLIVETV",Sky Sports Football VPN
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc340/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQwOjE3ODk2ODcyODI1MDI6Y2RubGl2ZXR2LnR2OmExZmI1YzIzZWEwYWNhOTUuY2RkYzY5YzFlNTU4NjQ2NDQ4MjJiMWNhYmFlZTBkN2RmNTU0N2Y2NjMwNmExYmE4ZTE4MTBhOWUyM2VlNTUyMA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",DAZN LA LIGA 1
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2OTY4NjcxMzk6Y2RubGl2ZXR2LnR2OmY2YmYzZjJkOTk2Yjk5OWIuMmFkMTUzZTkzNDM1NjE4MjhhNTgwOTYwY2E5YzBiNWYxNjdhNjMyM2ZiNmVlYjMzZTkyMmFkNmE1ZTM0YzMwNg
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",beIN SPORTS N
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2OTY4ODIwMjA6Y2RubGl2ZXR2LnR2OjE3Y2E5M2Q4OWY1MjdmNmUuOTY0NjBiYmJjYTY4OGUzMTVjMGRlNTNlYWIwZjU0MDUyMmRlMjQ1MWI2YWMwMDdiNzhmZGYwYjMzMzY4OTZiMA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",ESPN Deportes
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODk2OTY4OTY4ODQ6Y2RubGl2ZXR2LnR2OjViODI1NDUzMWUwNjJjNDUuOTEwMzk2ZDhlOWRlY2MyNDI4MmExNWUwYzdmYThiMzEwMzU3YjIzMjFkNTJmZjA5ZGIwNDIzZTcyNTgzNmFmOQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",CBS Sports Golazo
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb598/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTk4OjE3ODk2OTY5MTE3Mjg6Y2RubGl2ZXR2LnR2Ojg4MWQzMTdmOGVkZjIwMDMuMzQxYThkYjExODg3Y2UxZTA2OGFmMWI2ZmI3YjA5ZDJiYmY2ZmRhNTFlMzRiYjczODIzZGUwMmQxZTAwZDAxNw
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",Sky Sports Premier League
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc33d/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzNkOjE3ODk2OTY5MjY1ODI6Y2RubGl2ZXR2LnR2OjE4NWQ1YmYwZWJkNTdlYmYuMTFiN2QwZjEzNGRkOTcwMTNiZWEyNjlkOWRhMzA0ZjQ3MzZmYzA4ZWExNzg3M2E1NTBkNTM1MDViNWY5NWRmNQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",Sky Sports Football
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc340/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQwOjE3ODk2OTY5NDE0NTY6Y2RubGl2ZXR2LnR2OjJhMjFkNDc2NTdjNzFjMjEuZGJhMDIzYjQ4YTM4M2E3MjUxNTliMzYzYzQ0NzI2Y2QxMDA0Yzc4MGNmOWJiMjkwZjkzYzllMTFmN2NiNDE4Zg
