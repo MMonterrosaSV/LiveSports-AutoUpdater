@@ -1,34 +1,21 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/49/1/dazn-laliga-logo-png_seeklogo-490009.png" group-title="LIVE SPORTS TVNOW247",DAZN LA LIGA 1
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MzgiLCJ0cyI6MTc4OTYwOTg4NjEwMX0
-#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wrzP12C0/movistar-laliga-hdr.jpg" group-title="LIVE SPORTS TVNOW247",M+ LA LIGA 1
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NCIsInRzIjoxNzg5NTk2MDkyNTEzfQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/rKnjKNYs/Ligade-Campeonespor-MP.jpg" group-title="LIVE SPORTS TVNOW247",M+ CHAMPIONS LEAGUE 1
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzUiLCJ0cyI6MTc4OTU5NjEwNzk0OX0
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png" group-title="LIVE SPORTS TVNOW247",M+ DEPORTES 1
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzYiLCJ0cyI6MTc4OTU5NjEyMzE2OH0
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/43/2/movistar-plus-2022-logo-png_seeklogo-432602.png" group-title="LIVE SPORTS TVNOW247",M+
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzciLCJ0cyI6MTc4OTU5NjEzODU4MX0
-#EXTINF:-1 tvg-id="" tvg-logo="https://logowik.com/content/uploads/images/espn-deportes4468.jpg" group-title="LIVE SPORTS TVNOW247",ESPN DEPORTES
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzUiLCJ0cyI6MTc4OTYxMDU1MDgwNH0
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/dsports-logo-png_seeklogo-626310.png" group-title="LIVE SPORTS TVNOW247",DSPORTS
-https://cdn.freetv2026.lat/hls/dsports/index.m3u8?token=qG1A5WA_QW-vgg9uUZxLhQ&expires=1789653756
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS TVNOW247",TUDN MEXICO
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzUiLCJ0cyI6MTc4OTU0Nzc5ODAwNH0
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS TVNOW247",TUDN USA
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NiIsInRzIjoxNzg5NTQ3ODMzNDYzfQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="LIVE SPORTS TVNOW247",TUDN USA BACKUP
-https://cdn.freetv2026.lat/hls/tudnus/index.m3u8?token=PZRrPb-6YArZ1VpCGUVZow&expires=1789653801
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/48/1/tnt-sports-logo-png_seeklogo-486966.png" group-title="LIVE SPORTS TVNOW247",TNT SPORTS 1
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMSIsInRzIjoxNzg5NTk2MjMwMDM5fQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://media.info/l/o/1/1540.1690027877.png" group-title="LIVE SPORTS TVNOW247",TNT SPORTS 2
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMiIsInRzIjoxNzg5NTQ3OTEyNjQ0fQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS TVNOW247",SKY SPORTS PREMIER LEAGUE
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzAiLCJ0cyI6MTc4OTU0Nzk3NzYwMH0
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS TVNOW247",SKY SPORTS FOOTBALL
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNSIsInRzIjoxNzg5NTQ4MDEwNDM4fQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS TVNOW247",SKY SPORTS PLUS
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNiIsInRzIjoxNzg5NTQ4MDQzNDI2fQ
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.seeklogo.com/logo-png/62/1/sky-sports-2025-logo-png_seeklogo-626273.png" group-title="LIVE SPORTS TVNOW247",SKY SPORTS MAIN EVENT
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOCIsInRzIjoxNzg5NTQ4MDc2OTg1fQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",
+    "DAZN LA LIGA 1": "https://tvnow247.top/embed/dazn-laliga/",
+    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
+    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
+    "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
+    "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
+    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
+    "DSPORTS": "https://wsdeportes.net/?v=dsports",
+    "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
+    "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
+    "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
+    "TNT SPORTS 1": "https://tvnow247.top/embed/tnt-sports-1/",
+    "TNT SPORTS 2": "https://tvnow247.top/watch/tnt-sports-2/",
+    "SKY SPORTS PREMIER LEAGUE": "https://tvnow247.top/watch/sky-sports-premier-league/",
+    "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
+    "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
+    "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
+    DAZN LA LIGA 1
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2NTg3MDQ1NzY6Y2RubGl2ZXR2LnR2OjRjNTcyYWIyMmYwMGM2NTQuYTdkNWFjMDY5ZWU3YjcxNjE3NjVhNTE1MzE3Mzk1ZWQ0ZTE5Y2ViYTEyZWE2MTkxMmI2MzhhYWJhOTU1NmU2Zg
