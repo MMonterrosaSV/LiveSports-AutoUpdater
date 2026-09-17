@@ -1,6 +1,14 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",DAZN LA LIGA 1
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2NTkyNzk1OTI6Y2RubGl2ZXR2LnR2OmUyYmY3OTdkMDhhMDExMjUuMWE5MzZmOGE4YWJjZjdlOWNjNTdlZGZlY2Y1ZWUyMDU3OWE2N2U4Njk3OTJiZWEzN2JjODQ3MTYwMTkwNDZmZg
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2NjgwNzI1ODI6Y2RubGl2ZXR2LnR2OjM2YjRkNjg4NzBiNjQ2OTYuNzFlYWZiMjgyN2YyNGMzMDA0YzM2OWQ1ODcxOGZhNjRkYTdmYWQyMzIwMThjZDY2NjMxMTIzZmJiMzMyYmZlZA
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",beIN SPORTS N
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2NTkyOTQxMzY6Y2RubGl2ZXR2LnR2OjBjY2Y3OTJiNjYyNWEzNWMuYmI5MGJhY2E3NTIyMGI2MDg0Mjk5MmY1ZjIzNjI1MzlmZDQ5YTJmODNlMTdjNjFhZDU1MTJiNzFhMDBhMjgzNA
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2NjgwODcxNzc6Y2RubGl2ZXR2LnR2OmMxYzRjYmE1ZjdkZWI0MmUuZGQyNmEzNDc1MDdjODU5ZDhlODFlYzkzYTY2MjQwOGZjNDRlYmIyNTU2MjlmM2M5YTgzZDNhOWNhNDJhN2ZiYQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",ESPN Deportes
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODk2NjgxMDE3Njk6Y2RubGl2ZXR2LnR2OmFjNTQxNGIzZWU4MTVmOTguZjVmOWRjMzZhZDg5NjQ1ZTYwMzUwMGRiMzAwNzdlNTY1ZDc5ZGY4ODc2Njg2ZmU3ZDJkNzcyZWRmNzQ0OWU2ZA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",CBS Sports Golazo
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb598/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTk4OjE3ODk2NjgxMTYzNTM6Y2RubGl2ZXR2LnR2OmU1ZDZmN2ExNGY1MWU3NTguNmFmZDBmMDIyMjU3Y2VlMDRjOWJmZTk5NDQ4YWY3YmJiNGQzNTY2NzU1NzE4ODA1OThkYjE2NGM0ZGE2OTVlOA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",Sky Sports Premier League
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc33d/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzNkOjE3ODk2NjgxMzA5NTM6Y2RubGl2ZXR2LnR2OjZhYjM2M2JmODA2YWEyZmYuNDdhNGNjMjA2NjQ1YjI3N2E0Mzk1YzRjMTU3NWYyZDBhYjgxNDc4NDQzNDQ0NzQzOTk5OTA3MTU1ODQwNTMyMg
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Live Sports",Sky Sports Football
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc340/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQwOjE3ODk2NjgxNDU1MjU6Y2RubGl2ZXR2LnR2OmFkZTZmNmEzMzA2ZDgzZDUuNzliOWNhYWJiYzZjZWRhNzFmODlmNTUxZWJhZGJjODFlZmI0NjgzZmNkMDZjOThhMDA4MjkzMmE0M2Q2NmMyZg
