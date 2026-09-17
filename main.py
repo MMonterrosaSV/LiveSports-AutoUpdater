@@ -115,30 +115,30 @@ def extract_m3u8(url: str, headless: bool = True):
 
 channels = {
 #TVNOW247 CHANNELS
-    "DAZN LA LIGA 1": "https://tvnow247.top/embed/dazn-laliga/",
-    "M+ LA LIGA 1": "https://tvnow247.top/embed/movistar-laliga/",
-    "M+ CHAMPIONS LEAGUE 1": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
-    "M+ DEPORTES 1": "https://tvnow247.top/embed/movistar-deportes-4",
-    "M+": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
-    "ESPN DEPORTES": "https://tvnow247.top/embed/espn-deportes/",
-    "DSPORTS": "https://wsdeportes.net/?v=dsports",
-    "TUDN MEXICO": "https://tvnow247.top/watch/tudn-mx/",
-    "TUDN USA": "https://tvnow247.top/watch/tudn-usa/",
-    "TUDN USA BACKUP": "https://wsdeportes.net/?v=tudnus",
-    "TNT SPORTS 1": "https://tvnow247.top/embed/tnt-sports-1/",
-    "TNT SPORTS 2": "https://tvnow247.top/watch/tnt-sports-2/",
-    "SKY SPORTS PREMIER LEAGUE": "https://tvnow247.top/watch/sky-sports-premier-league/",
-    "SKY SPORTS FOOTBALL": "https://tvnow247.top/watch/sky-sports-football/",
-    "SKY SPORTS PLUS": "https://tvnow247.top/watch/sky-sports-plus/",
-    "SKY SPORTS MAIN EVENT": "https://tvnow247.top/watch/sky-sports-main-event/",
+    "DAZN LA LIGA 1 - TVNOW247": "https://tvnow247.top/embed/dazn-laliga/",
+    "M+ LA LIGA 1 - TVNOW247": "https://tvnow247.top/embed/movistar-laliga/",
+    "M+ CHAMPIONS LEAGUE 1 - TVNOW247": "https://tvnow247.top/embed/movistar-liga-de-campeones/",
+    "M+ DEPORTES 1 - TVNOW247": "https://tvnow247.top/embed/movistar-deportes-4",
+    "M+ PLUS - TVNOW247": "https://tvnow247.top/embed/movistar-supercopa-de-espana/",
+    "ESPN DEPORTES - TVNOW247": "https://tvnow247.top/embed/espn-deportes/",
+    "DSPORTS - WSDEPORTES": "https://wsdeportes.net/?v=dsports",
+    "TUDN MEXICO - TVNOW247": "https://tvnow247.top/watch/tudn-mx/",
+    "TUDN USA - TVNOW247": "https://tvnow247.top/watch/tudn-usa/",
+    "TUDN USA WSDEPORTES": "https://wsdeportes.net/?v=tudnus",
+    "TNT SPORTS 1 - TVNOW247": "https://tvnow247.top/embed/tnt-sports-1/",
+    "TNT SPORTS 2 - TVNOW247": "https://tvnow247.top/watch/tnt-sports-2/",
+    "SKY SPORTS PREMIER LEAGUE - TVNOW247": "https://tvnow247.top/watch/sky-sports-premier-league/",
+    "SKY SPORTS FOOTBALL - TVNOW247": "https://tvnow247.top/watch/sky-sports-football/",
+    "SKY SPORTS PLUS - TVNOW247": "https://tvnow247.top/watch/sky-sports-plus/",
+    "SKY SPORTS MAIN EVENT - TVNOW247": "https://tvnow247.top/watch/sky-sports-main-event/",
     
-#CDNLiveTV CHANNELS
-    "DAZN LA LIGA 1": "https://cdnlivetv.tv/api/v1/channels/player/?name=DAZN%20LaLiga&code=es&user=cdnlivetv&plan=free",
-    "beIN SPORTS N": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20SPORTS%20N&code=es&user=cdnlivetv&plan=free",
-    "ESPN Deportes": "https://cdnlivetv.tv/api/v1/channels/player/?name=ESPN%20Deportes&code=us&user=cdnlivetv&plan=free",
-    "CBS Sports Golazo": "https://cdnlivetv.tv/api/v1/channels/player/?name=CBS%20Sports%20Golazo&code=us&user=cdnlivetv&plan=free",
-    "Sky Sports Premier League": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Premier%20League&code=gb&user=cdnlivetv&plan=free",
-    "Sky Sports Football": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Football&code=gb&user=cdnlivetv&plan=free",
+#CDNLIVETV CHANNELS
+    "DAZN LA LIGA 1 - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=DAZN%20LaLiga&code=es&user=cdnlivetv&plan=free",
+    "beIN SPORTS N - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20SPORTS%20N&code=es&user=cdnlivetv&plan=free",
+    "ESPN Deportes - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=ESPN%20Deportes&code=us&user=cdnlivetv&plan=free",
+    "CBS Sports Golazo - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=CBS%20Sports%20Golazo&code=us&user=cdnlivetv&plan=free",
+    "Sky Sports Premier League - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Premier%20League&code=gb&user=cdnlivetv&plan=free",
+    "Sky Sports Football - CDNLIVETV": "https://cdnlivetv.tv/api/v1/channels/player/?name=Sky%20Sports%20Football&code=gb&user=cdnlivetv&plan=free",
 
 }
 
