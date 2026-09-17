@@ -163,7 +163,7 @@ def update_playlist():
         prev = existing.get(name, {})
         tvg_id = prev.get("tvg_id", "")
         tvg_logo = prev.get("tvg_logo", "")
-        group_title = prev.get("group_title", "Live Sports")
+        group_title = prev.get("group_title", "LIVE SPORTS")
         old_url = prev.get("url", "https://example.com")
 
         if new_url:
