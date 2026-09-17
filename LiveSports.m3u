@@ -1,14 +1,44 @@
 #EXTM3U
 #PLAYLIST:LIVE SPORTS
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",DAZN LA LIGA 1
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2OTg1MTY0OTU6Y2RubGl2ZXR2LnR2OjI2OWExMGU0MDM0YzQ1MDAuNmQyNzE3NWQ4OGM2Mzg3MzYwNTg0NzQxZmI4OWZmMmQ0OTJmYmIzYzhiMTc3ZWEzYzJmZmI0NjUxZjI3YTA2Nw
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76cc883/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjODgzOjE3ODk2OTg3ODYwNzk6Y2RubGl2ZXR2LnR2OmE4MGJjYjE1NGIzOWI3YjguMTU0NDdjZDEyN2FmZjhjYTYwNDQzNjc1YzdjMTdhYTY1Mjc5MzQ1Nzk5NTk2ZWUyMmRlZWE0NGYzNTUyNzlmOA
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ LA LIGA 1
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NCIsInRzIjoxNzg5Njg0NDA4MzE0fQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ CHAMPIONS LEAGUE 1
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+ DEPORTES 1
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",M+
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",ESPN DEPORTES
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzUiLCJ0cyI6MTc4OTY4NDQ3MDUwNn0
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",DSPORTS
+https://cdn.freetv2026.lat/hls/dsports/index.m3u8?token=sIF19YJQHz1nDiZjyTFfsQ&expires=1789698878
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TUDN MEXICO
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TUDN USA
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TUDN USA BACKUP
+https://cdn.freetv2026.lat/hls/tudnus/index.m3u8?token=QONTUeeiW-heDqLGeOJ4wQ&expires=1789698923
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TNT SPORTS 1
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMSIsInRzIjoxNzg5Njg0NTQ3MDc3fQ
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",TNT SPORTS 2
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",SKY SPORTS PREMIER LEAGUE
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",SKY SPORTS FOOTBALL
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",SKY SPORTS PLUS
+https://example.com
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",SKY SPORTS MAIN EVENT
+https://example.com
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",beIN SPORTS N
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2OTg1MzE1Njc6Y2RubGl2ZXR2LnR2OjNhZmFhNDQwMWM4MjE4ODkuN2NiZGNiMWVjNzBmMzBiMTg4MjM1NjBhZDZjMjFlOWQxNjEwNzU0MzU3ZjA1NTExYmQwNzgxZWYzYmIyZDdkOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5d6/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWQ2OjE3ODk2OTkwMzAzNDg6Y2RubGl2ZXR2LnR2OjFmZjZjNmJkOGM3MTg3NDQuNzk3YjY4ZGYyYmEyYzFiOWUzYmJiOGNkYjM3ODk0MDE1MjE2OGIxNGQxNzE3MGQ1ZWRiZDczMzliMDg4NjA5ZA
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",ESPN Deportes
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODk2OTg1NDYxMTg6Y2RubGl2ZXR2LnR2OmUwMDg0ODRlMmE5NmRiMjQuZGIwMmY3NDk0N2EyMTYyMWFlZDBkZTkyYzVmMmQ4MDdiMGNhM2U5Y2RlMWVmNjVlY2Q0ODY0ODBkNGRiYmRjMw
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODk2OTkwNDQ5MzI6Y2RubGl2ZXR2LnR2OjkyMTQ1YTBiNjA1MjcxMWYuMzQzNDZkYTA5OGJjZjZjMjhiOTE0YmYzYThjNzFmYzFhOTY4M2U2ZGE3N2EzOGMyMDQxMTI4ODBiZDc2ZTcwNw
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",CBS Sports Golazo
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb598/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTk4OjE3ODk2OTg1NjA2Nzk6Y2RubGl2ZXR2LnR2OjA4MzdlYTg2NzY0YzFjNWMuODUyOTFmNzNkNmU3Y2YwNzE1OTBmNDc3N2JlZjFjMTAwNGQ5YzgzNGE5ZjVjMGRkYjVmYTlhYjExYmQxNzRkNg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb598/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTk4OjE3ODk2OTkwNTk0ODU6Y2RubGl2ZXR2LnR2OjQ2NDMyNDM3NzJhOThhZjUuOGU4MzI4MzYxZmI2NThjYzdmOGY2NjJjYTdhNGY4OWNmN2MxMWNmYTQwNmZlMWRiNzgwZjMxYjg3MzZhM2ZjMA
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",Sky Sports Premier League
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc33d/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzNkOjE3ODk2OTg1NzUzOTA6Y2RubGl2ZXR2LnR2OjBhZDZkNzY0MDMwMzI0NWYuZjY3YTIzMjk0NTkyOTMwYjUzMjAwMzE1MDkyODRkOTQ5YjRhMTc1OTdhM2I2ODcxMjJmOWI5YjUyNmNmMmViOA
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc33d/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzNkOjE3ODk2OTkwNzQwMzc6Y2RubGl2ZXR2LnR2OjIyOTczY2I4YWFlZmEzMjIuOGNmMWJmNWJhNDg4ZTJiOTQ5ZDUwNmZjNDY3OWMxN2FiZmM5NGEyZjJiZjNmMWY4Y2RhNTY5MGQ1OGJlMjIyYQ
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="LIVE SPORTS",Sky Sports Football
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc340/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQwOjE3ODk2OTg1ODk5NTU6Y2RubGl2ZXR2LnR2OjdkODQwODFhNmRkZmFlMWUuNTFjOTIyOTM0MWRiZTAxNzUwOWJlNWRkNmE0MGMzZjRkYTU3OTMyNjNiNDA2YjcxYzNiNzkzOWZlNTE3ZDZlMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc340/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQwOjE3ODk2OTkwODg1Nzg6Y2RubGl2ZXR2LnR2OmM0YzhkZTc3NDM4ZTE3NDEuMWYzZjZiN2IwODA0ZDQxMDdlMzkzODkxNmM1NGRmOGNjYzZmMzEwZTBlZGI2NTcyNjIwY2Y4YWRkNDI1MDc5OQ
