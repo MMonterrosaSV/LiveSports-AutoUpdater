@@ -1,1 +1,22 @@
-
+{
+  {
+    "ID": "538",
+    "Channel Name": "DAZNLaLiga",
+    "Base": "https://ds164.bluetier.top/DAZNLaLiga/tracks-v1a1/mono.m3u8?token=",
+  },
+  {
+    "ID": "435",
+    "Channel Name": "MLIGADECAMPEONES",
+    "Base": "https://ds164.bluetier.top/MLIGADECAMPEONES/tracks-v1a1/mono.m3u8?token=",
+  },
+  {
+    "ID": "84",
+    "Channel Name": "LALIGAES",
+    "Base": "https://ds164.bluetier.top/LALIGAES/tracks-v1a1/mono.m3u8?token=",
+  },
+  {
+    "ID": "375",
+    "Channel Name": "ESPNDEPORTES",
+    "Base": "https://ds164.bluetier.top/ESPNDEPORTES/tracks-v1a1/mono.m3u8?token=",
+  },
+ },
